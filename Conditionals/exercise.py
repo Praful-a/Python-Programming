@@ -108,3 +108,13 @@ if condition:
     print('Evaluated to True')
 else:
     print('Evaluated to False')
+
+
+#take temp of water
+temperature = int(input())
+if temperature > 100:
+    print('Steam')
+elif temperature < 0:
+    print('Ice')
+else:
+    print('Water')
