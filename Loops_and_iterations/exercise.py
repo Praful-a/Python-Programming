@@ -38,3 +38,12 @@ while True:
         break
     print(x)
     x += 1
+
+#Multiplication table
+n = int(input()) #5
+m = 0
+while n > m:
+    m += 1
+    for i in range(1, 1 + n):
+        print(i * m, end=' ')
+    print()
