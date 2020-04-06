@@ -42,7 +42,6 @@ emp_2 = Employee('Test', 'User', 60000)
 my_date = datetime.date(2016, 7, 11)
 print(Employee.is_workday(my_date))
 
-
 # emp_str_1 = 'John-Doe-70000'
 # emp_str_2 = 'Steve-Smith-300000'
 # emp_str_3 = 'Jane-Doe-90000'
