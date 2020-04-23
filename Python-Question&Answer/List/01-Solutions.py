@@ -67,7 +67,12 @@ print(count_string(['xyz', 'abc', 'aba', 'aba', 'a', 'b']))
 Sample List : [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
 Expected Result : [(2, 1), (1, 2), (2, 3), (4, 4), (2, 5)]
 l = [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
-
+n = len(l):
+for i in range(n):
+    for j in range(1, n-i):
+        if l[j-1][1] > l[j][1]:
+            l[j-1], l[j] = l[j], l[j-1]
+print(l)
 or
 def sort_list_last(tuples):
     return sorted(tuples, key=lambda x: x[-1])
