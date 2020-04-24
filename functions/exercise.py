@@ -58,3 +58,17 @@ info = {'name': 'John', 'age': 22}
 
 student_info(courses, info)
 student_info(*courses, **info)
+
+
+#Combination: C(n, k)
+def comb(n, k):
+    ans = 1
+    for i in range(n - k + 1, n + 1):
+        ans *= i
+    for i in range(1, k + 1):
+        ans /= i
+    return ans
+
+
+comb(5, 3) #10
+comb(10, 2) #45
