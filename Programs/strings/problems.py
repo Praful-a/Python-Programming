@@ -32,6 +32,15 @@
 # print("Count of all characters in GeeksforGeeks is : \n" + str(res))
 
 ## using set + count method
-test_str = "GeeksforGeeks"
-res = {i : test_str.count(i) for i in set(test_str)}
-print("The count of all characters in GeeksforGeeks is :\n" + str(res))
+# test_str = "GeeksforGeeks"
+# res = {i : test_str.count(i) for i in set(test_str)}
+# print("The count of all characters in GeeksforGeeks is :\n" + str(res))
+
+# def string_both_ends(str):
+#     if len(str) < 2:
+#         return "Empty String"
+#     return str[0:2] + str[-2:]
+# 
+# print(string_both_ends("w3resource"))
+# print(string_both_ends("w3"))
+# print(string_both_ends("w"))
