@@ -52,3 +52,26 @@
 #     max1 = max(l)
 #     return max1
 # print(get_largest([-1, 0, 2, 3, 4]))
+
+# Get the smallest number from list.
+"""First Method"""
+# def get_smallest(l):
+#     min = l[0]
+#     for i in range(len(l)):
+#         if l[i] < min:
+#             min = l[i]
+#     return min
+# print(get_smallest([-1, 0, 2, 3, 4]))
+"""Second Method"""
+# def get_smallest(l):
+#     min = l[0]
+#     for i in l:
+#         if i < min:
+#             min = i
+#     return min
+# print(get_smallest([-1, 0, 2, 3, 4]))
+"""Third Method"""
+def get_smallest(l):
+    max1 = min(l)
+    return max1
+print(get_smallest([-1, 0, 2, 3, 4]))
