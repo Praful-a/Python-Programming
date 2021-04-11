@@ -40,7 +40,18 @@
 #     if len(str) < 2:
 #         return "Empty String"
 #     return str[0:2] + str[-2:]
-# 
+#
 # print(string_both_ends("w3resource"))
 # print(string_both_ends("w3"))
 # print(string_both_ends("w"))
+
+"""Program to get a string from a given string where all
+occurrences of its first char have been changed to '$'
+except the first char itself."""
+
+def change(str):
+    for i in str:
+        if str[i] in str:
+            str[i] = '$'
+    return str
+print(change("restart"))
