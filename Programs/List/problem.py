@@ -137,3 +137,13 @@ from a given list of non-empty tuples."""
 #     return lst
 # lst = [10, 20, 30, 40, 50, 60, 10]
 # print(list(remove_duplicate(lst)))
+
+"""Check list is empty or not."""
+def check_list_empty(li):
+    if li:
+        print("list is not empty!")
+    else:
+        print("list is empty!")
+
+check_list_empty([])
+check_list_empty([1])
