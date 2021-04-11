@@ -71,7 +71,20 @@
 #     return min
 # print(get_smallest([-1, 0, 2, 3, 4]))
 """Third Method"""
-def get_smallest(l):
-    max1 = min(l)
-    return max1
-print(get_smallest([-1, 0, 2, 3, 4]))
+# def get_smallest(l):
+#     max1 = min(l)
+#     return max1
+# print(get_smallest([-1, 0, 2, 3, 4]))
+
+"""Count the number of strings where the string length 2
+or more and the first and last character are same from a given
+list of strings."""
+"""First Method"""
+# def count_string(li):
+#     count = 0
+#     for i in li:
+#         if len(i) >= 2:
+#             if i[0] == i[-1]:
+#                 count += 1
+#     return count
+# print(count_string(['aba', 'xyz', 'aba', '1221']))
