@@ -23,9 +23,32 @@
 #     return product
 # print(mul_all_items([1,2,3,4,5]))
 """Second Method"""
-def mul_all_items(l):
-    product = 1
-    for i in l:
-        product *= i
-    return product
-print(mul_all_items([1,2,3]))
+# def mul_all_items(l):
+#     product = 1
+#     for i in l:
+#         product *= i
+#     return product
+# print(mul_all_items([1,2,3]))
+
+# Get the largest number from a list
+"""First Method"""
+# def get_largest(l):
+#     max = l[0]
+#     for i in range(len(l)):
+#         if l[i] > max:
+#             max = l[i]
+#     return max
+# print(get_largest([-1, 0, 2, 3, 4]))
+"""Second Method"""
+# def get_largest(l):
+#     max = l[0]
+#     for i in l:
+#         if i > max:
+#             max = i
+#     return max
+# print(get_largest([-1, 0, 2, 3, 4]))
+"""Third Method"""
+# def get_largest(l):
+#     max1 = max(l)
+#     return max1
+# print(get_largest([-1, 0, 2, 3, 4]))
