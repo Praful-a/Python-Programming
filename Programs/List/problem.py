@@ -117,4 +117,23 @@ from a given list of non-empty tuples."""
 # print(sort_Tuple(tup))
 
 """Remove Duplicates from  a list."""
-    
+"""First Method"""
+# def remove_duplicate(li):
+#     dup_items = set()
+#     uniq_items = []
+#     for x in li:
+#         if x not in dup_items:
+#             uniq_items.append(x)
+#             dup_items.add(x)
+#     return dup_items
+# lst = [10, 20, 30, 40, 50, 60, 10]
+# print(list(remove_duplicate(lst)))
+"""Second Method"""
+# def remove_duplicate(li):
+#     lst = []
+#     for i in li:
+#         if i not in lst:
+#             lst.append(i)
+#     return lst
+# lst = [10, 20, 30, 40, 50, 60, 10]
+# print(list(remove_duplicate(lst)))
