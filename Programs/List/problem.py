@@ -159,6 +159,6 @@ from a given list of non-empty tuples."""
 def clone(li):
     lst = []
     for i in range(len(li)):
-        lst[i] = li[i]
+        lst = lst + [li[i]]
     return lst
 print(clone([1,2,3,4,78,89,100]))
