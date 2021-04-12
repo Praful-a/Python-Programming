@@ -139,11 +139,26 @@ from a given list of non-empty tuples."""
 # print(list(remove_duplicate(lst)))
 
 """Check list is empty or not."""
-def check_list_empty(li):
-    if li:
-        print("list is not empty!")
-    else:
-        print("list is empty!")
+# def check_list_empty(li):
+#     if li:
+#         print("list is not empty!")
+#     else:
+#         print("list is empty!")
+# check_list_empty([])
+# check_list_empty([1])
 
-check_list_empty([])
-check_list_empty([1])
+"""Clone or copy a list"""
+"""First Method"""
+# def clone(li):
+#     lst = []
+#     for i in range(len(li)):
+#         lst.append(li[i])
+#     return lst
+# print(clone([1,2,3,4,78,89,100]))
+"""Second Method"""
+def clone(li):
+    lst = []
+    for i in range(len(li)):
+        lst[i] = li[i]
+    return lst
+print(clone([1,2,3,4,78,89,100]))
