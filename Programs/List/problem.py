@@ -156,9 +156,21 @@ from a given list of non-empty tuples."""
 #     return lst
 # print(clone([1,2,3,4,78,89,100]))
 """Second Method"""
-def clone(li):
-    lst = []
-    for i in range(len(li)):
-        lst = lst + [li[i]]
-    return lst
-print(clone([1,2,3,4,78,89,100]))
+# def clone(li):
+#     lst = []
+#     for i in range(len(li)):
+#         lst = lst + [li[i]]
+#     return lst
+# print(clone([1,2,3,4,78,89,100]))
+
+"""Find the words that are longer than n from given
+list of words"""
+def long_words(n, str):
+    word_len = []
+    txt = str.split(" ")
+    for i in txt:
+        if len(i) > n:
+            word_len.append(i)
+    return word_len
+str = "The quick brown fox jumps over the lazy dog"
+print(long_words(3, str))
