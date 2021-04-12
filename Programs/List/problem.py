@@ -165,12 +165,34 @@ from a given list of non-empty tuples."""
 
 """Find the words that are longer than n from given
 list of words"""
-def long_words(n, str):
-    word_len = []
-    txt = str.split(" ")
-    for i in txt:
-        if len(i) > n:
-            word_len.append(i)
-    return word_len
-str = "The quick brown fox jumps over the lazy dog"
-print(long_words(3, str))
+# def long_words(n, str):
+#     word_len = []
+#     txt = str.split(" ")
+#     for i in txt:
+#         if len(i) > n:
+#             word_len.append(i)
+#     return word_len
+# str = "The quick brown fox jumps over the lazy dog"
+# print(long_words(3, str))
+
+"""Take two lists and return True if they have at least
+one common member."""
+"""First Method"""
+# def common_ele(l1, l2):
+#     for i in l1:
+#         if i in l2:
+#             return True
+#     return False
+# lst1 = [1,2,3,4]
+# lst2 = [8,5,7,6]
+# print(common_ele(lst1, lst2))
+"""Second Method"""
+def common_ele(l1, l2):
+    for i in range(len(l1)):
+        for j in range(len(l2)):
+            if l1[i] == l2[j]:
+                return True
+    return False
+lst1 = [1,2,3,4]
+lst2 = [8,5,7,6]
+print(common_ele(lst1, lst2))
