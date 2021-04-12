@@ -30,9 +30,11 @@
 
 """Remove even numbers from list."""
 """list comprehension"""
-# lst = [7,8,120,25,44,20,27]
-# lst = [x for x in lst if x%2!=0]
-# print(lst)
+# def remove_even(li):
+#     return [x for x in li if (x%2 != 0)]
+#
+# lst = [1, 2, 9, 8, 5, 77, 90, 89]
+# print(remove_even(lst))
 """Using function"""
 # def remove_even(li):
 #     lst2 = []
