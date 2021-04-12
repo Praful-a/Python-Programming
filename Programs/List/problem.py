@@ -187,12 +187,12 @@ one common member."""
 # lst2 = [8,5,7,6]
 # print(common_ele(lst1, lst2))
 """Second Method"""
-def common_ele(l1, l2):
-    for i in range(len(l1)):
-        for j in range(len(l2)):
-            if l1[i] == l2[j]:
-                return True
-    return False
-lst1 = [1,2,3,4]
-lst2 = [8,5,7,6]
-print(common_ele(lst1, lst2))
+# def common_ele(l1, l2):
+#     for i in range(len(l1)):
+#         for j in range(len(l2)):
+#             if l1[i] == l2[j]:
+#                 return True
+#     return False
+# lst1 = [1,2,3,4]
+# lst2 = [8,5,7,6]
+# print(common_ele(lst1, lst2))
