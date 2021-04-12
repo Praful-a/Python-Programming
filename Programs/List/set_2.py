@@ -27,3 +27,19 @@
 #     print("]", end=",")
 #     print(end="")
 # print("]")
+
+"""Remove even numbers from list."""
+"""list comprehension"""
+# lst = [7,8,120,25,44,20,27]
+# lst = [x for x in lst if x%2!=0]
+# print(lst)
+"""Using function"""
+# def remove_even(li):
+#     lst2 = []
+#     for i in li:
+#         if (i%2 != 0):
+#             lst2.append(i)
+#     return lst2
+#
+# lst = [1, 2, 9, 8, 5, 77, 90, 89]
+# print(remove_even(lst))
