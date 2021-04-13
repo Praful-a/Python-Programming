@@ -47,7 +47,23 @@
 # print(remove_even(lst))
 
 """Shuffle and print a specified list."""
-from random import shuffle
-lst = [1,2,3,4,5]
-shuffle(lst)
-print(lst)
+"""Fisher-Yates shuffle Algorithm"""
+# import random
+# test_lst = [1,4,5,6,3]
+# print("The original list is : " + str(test_lst))
+# for i in range(len(test_lst)-1, 0, -1):
+#     j = random.randint(0, i+1)
+#     # swap arr[i] with the element at random index
+#     test_lst[i], test_lst[j] = test_lst[j], test_lst[i]
+# print("The shuffled list is : " + str(test_lst))
+"""using random shuffle method"""
+# from random import shuffle
+# lst = [1,2,3,4,5]
+# shuffle(lst)
+# print(lst)
+"""Using random.sample()"""
+# import random
+# test_lst = [1,4,5,6,3]
+# print("The original list is : " + str(test_lst))
+# res = random.sample(test_lst, len(test_lst))
+# print('The shuffled list is : ' + str(res))
