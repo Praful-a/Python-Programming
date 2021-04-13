@@ -45,3 +45,9 @@
 #
 # lst = [1, 2, 9, 8, 5, 77, 90, 89]
 # print(remove_even(lst))
+
+"""Shuffle and print a specified list."""
+from random import shuffle
+lst = [1,2,3,4,5]
+shuffle(lst)
+print(lst)
