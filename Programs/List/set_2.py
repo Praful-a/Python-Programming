@@ -67,3 +67,22 @@
 # print("The original list is : " + str(test_lst))
 # res = random.sample(test_lst, len(test_lst))
 # print('The shuffled list is : ' + str(res))
+
+"""print a list of first and last 5 elements where the values
+are square of numbers between 1 and 30."""
+"""First method"""
+# def generate():
+#     lst = []
+#     for i in range(1, 31):
+#         lst.append(i**2)
+#     print(lst[:5], end='')
+#     print(lst[-5:])
+# generate()
+"""Second method"""
+def generate():
+    lst = []
+    for i in range(1, 31):
+        if i <= 5 or i > 25:
+            lst.append(i**2)
+    print(lst)
+generate()
