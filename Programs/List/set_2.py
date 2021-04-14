@@ -160,6 +160,33 @@ are square of numbers between 1 and 30."""
 # lst = [10, 100, 5, 6, 9]
 # print(find_index(lst, 6))
 """Using predefined method"""
-lst = [10, 100, 5, 6, 9]
-ind = lst.index(6)
-print(ind)
+# lst = [10, 100, 5, 6, 9]
+# ind = lst.index(6)
+# print(ind)
+
+"""Flatten a shallow list."""
+"""First Method"""
+# def flatten(l):
+#     li = []
+#     for i in l:
+#         for j in i:
+#             li.append(j)
+#     return li
+#
+# lst = [[2,4,3],[1,5,6],[9],[7,9,0]]
+# print(flatten(lst))
+"""Second Method"""
+# import itertools
+# original_list =[[2,4,3],[1,5,6],[9],[7,9,0]]
+# new_merged_list = list(itertools.chain(*original_list))
+# print(new_merged_list)
+"""Third Method"""
+# def flatten(l):
+#     li = []
+#     for i in range(len(l)):
+#         for j in l[i]:
+#             li += [j]
+#     return li
+#
+# lst = [[2,4,3],[1,5,6],[9],[7,9,0]]
+# print(flatten(lst))
