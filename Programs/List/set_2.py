@@ -219,12 +219,59 @@ are square of numbers between 1 and 30."""
 # lst = [100, -1, 12, 9, 7, 4, 0]
 # print(random.choice(lst))
 """Second Method"""
-import random
-def random_sel(li):
-    i = random.randint(1, len(li)-1)
-    return li[i]
+# import random
+# def random_sel(li):
+#     i = random.randint(1, len(li)-1)
+#     return li[i]
+#
+# lst = [100, -1, 12, 9, 7, 4, 0]
+# print(random_sel(lst))
 
-lst = [100, -1, 12, 9, 7, 4, 0]
-print(random_sel(lst))
+"""Check whether two lists are circularly identical."""
+"""First Method"""
+# def circularly_identicla(l1, l2):
+#     for i in l1:
+#         for j in l2:
+#             if i == j:
+#                 return True
+#             else:
+#                 return False
+"""Second Method"""
+# def circularly_identicla(l1, l2):
+#     for i in range(len(l1)):
+#         for j in range(len(l2)):
+#             if l1[i] == l2[j]:
+#                 return True
+#             else:
+#                 return False
+
+# list1 = [10, 10, 0, 0, 10]
+# list2 = [10, 10, 10, 0, 0]
+# list3 = [1, 10, 10, 0, 0]
+# print(circularly_identicla(list1, list2))
+# print(circularly_identicla(list1, list3))
+"""Using Map function"""
+# list1 = [10, 10, 0, 0, 10]
+# list2 = [10, 10, 10, 0, 0]
+# list3 = [1, 10, 10, 0, 0]
+# print("Campare list1 and list2")
+# print(' '.join(map(str, list2)) in ' '.join(map(str, list1 * 2)))
+# print("Compare list1 and list3")
+# print(' '.join(map(str, list3)) in ' '.join(map(str, list1 * 2)))
 
 """Find the second smallest number in a list."""
+# def second_smallest(l):
+#     min = l[0]
+#     second_min = l[1]
+#     for i in range(len(l)):
+#         if l[i] < min:
+#             second_min = min
+#             min = l[i]
+#     return second_min
+#
+# lst = [12, -1, -2, 0, -100, 200]
+# print(second_smallest(lst))
+"""Using sort method"""
+# lst = [12, -1, -2, 0, 100, 200]
+# lst.sort()
+# print(lst[1])
