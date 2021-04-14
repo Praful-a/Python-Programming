@@ -310,3 +310,8 @@ are square of numbers between 1 and 30."""
 # my_set = set(lst)
 # my_new_list = list(my_set)
 # print("List of unique number : ", my_new_list)
+"""Using list comprehension"""
+lst = [10, 1, 1, 2, 3, 3, 100, 100]
+lst1 = []
+[lst1.append(n) for n in lst if n not in lst1]
+print(lst1)
