@@ -190,3 +190,25 @@ are square of numbers between 1 and 30."""
 #
 # lst = [[2,4,3],[1,5,6],[9],[7,9,0]]
 # print(flatten(lst))
+
+"""Append a list to the second list."""
+"""By accessing the index"""
+# def append(l1, l2):
+#     for i in range(len(l2)):
+#         l1 += [l2[i]]
+#     return l1
+# lst1 = [1,2,3,0]
+# lst2 = ['Red', 'Green', 'Black']
+# print(append(lst1, lst2))
+"""By using append method"""
+# def append(l1, l2):
+#     for i in l2:
+#         l1.append(i)
+#     return l1
+# lst1 = [1,2,3,0]
+# lst2 = ['Red', 'Green', 'Black']
+# print(append(lst1, lst2))
+"""By using + operator"""
+lst1 = [1,2,3,0]
+lst2 = ['Red', 'Green', 'Black']
+print(lst1 + lst2)
