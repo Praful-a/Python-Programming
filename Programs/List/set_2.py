@@ -275,3 +275,20 @@ are square of numbers between 1 and 30."""
 # lst = [12, -1, -2, 0, 100, 200]
 # lst.sort()
 # print(lst[1])
+
+"""Find the second largest number in a list."""
+# def second_largest(l):
+#     max = l[0]
+#     second_max = l[1]
+#     for i in range(len(l)):
+#         if l[i] > max:
+#             second_max = max
+#             max = l[i]
+#     return second_max
+#
+# lst = [12, 15, 17, 19, 100, 200]
+# print(second_largest(lst))
+"""Using sort method"""
+# lst = [12, 15, 17, 19, 100, 200]
+# lst.sort(reverse = True)
+# print(lst[1])
