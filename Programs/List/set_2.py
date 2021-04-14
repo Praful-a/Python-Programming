@@ -149,3 +149,17 @@ are square of numbers between 1 and 30."""
 #
 # lst = ['P', 'Y', 'T', 'H', 'O', 'N']
 # print(join(lst))
+
+"""Find the index of an item in specified list."""
+"""Using function"""
+# def find_index(li, val):
+#     for i in range(len(li)):
+#         if val == li[i]:
+#             return i
+#
+# lst = [10, 100, 5, 6, 9]
+# print(find_index(lst, 6))
+"""Using predefined method"""
+lst = [10, 100, 5, 6, 9]
+ind = lst.index(6)
+print(ind)
