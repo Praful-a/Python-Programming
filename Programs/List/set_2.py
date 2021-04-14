@@ -209,6 +209,22 @@ are square of numbers between 1 and 30."""
 # lst2 = ['Red', 'Green', 'Black']
 # print(append(lst1, lst2))
 """By using + operator"""
-lst1 = [1,2,3,0]
-lst2 = ['Red', 'Green', 'Black']
-print(lst1 + lst2)
+# lst1 = [1,2,3,0]
+# lst2 = ['Red', 'Green', 'Black']
+# print(lst1 + lst2)
+
+"""Select an item randomly from a list."""
+"""By using random"""
+# import random
+# lst = [100, -1, 12, 9, 7, 4, 0]
+# print(random.choice(lst))
+"""Second Method"""
+import random
+def random_sel(li):
+    i = random.randint(1, len(li)-1)
+    return li[i]
+
+lst = [100, -1, 12, 9, 7, 4, 0]
+print(random_sel(lst))
+
+"""Find the second smallest number in a list."""

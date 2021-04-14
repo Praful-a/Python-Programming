@@ -1,4 +1,4 @@
-# Program to sum all the items in a list
+"""Program to sum all the items in a list"""
 ## 1st Method  ##
 # def sum_all_item(li):
 #     sum = 0
@@ -30,7 +30,7 @@
 #     return product
 # print(mul_all_items([1,2,3]))
 
-# Get the largest number from a list
+"""Get the largest number from a list"""
 """First Method"""
 # def get_largest(l):
 #     max = l[0]
@@ -53,7 +53,7 @@
 #     return max1
 # print(get_largest([-1, 0, 2, 3, 4]))
 
-# Get the smallest number from list.
+"""Get the smallest number from list."""
 """First Method"""
 # def get_smallest(l):
 #     min = l[0]
