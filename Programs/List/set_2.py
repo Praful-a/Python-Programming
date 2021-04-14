@@ -134,3 +134,18 @@ are square of numbers between 1 and 30."""
 #         print("{} : {}".format(index, value))
 # lst = [32, 45, 100, 90, -1, 2]
 # access_index(lst)
+
+"""Convert a list of character into string."""
+"""First Method"""
+# lst = ['P', 'Y', 'T', 'H', 'O', 'N']
+# lst1 = ''.join(lst)
+# print(lst1)
+"""Second Method"""
+# def join(lst):
+#     str = ""
+#     for i in range(len(lst)):
+#             str += lst[i]
+#     return str
+#
+# lst = ['P', 'Y', 'T', 'H', 'O', 'N']
+# print(join(lst))
