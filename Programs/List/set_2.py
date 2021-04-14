@@ -79,10 +79,58 @@ are square of numbers between 1 and 30."""
 #     print(lst[-5:])
 # generate()
 """Second method"""
-def generate():
-    lst = []
-    for i in range(1, 31):
-        if i <= 5 or i > 25:
-            lst.append(i**2)
-    print(lst)
-generate()
+# def generate():
+#     lst = []
+#     for i in range(1, 31):
+#         if i <= 5 or i > 25:
+#             lst.append(i**2)
+#     print(lst)
+# generate()
+
+"""Program to generate all permutations of a list"""
+"""Using permutations method"""
+# import itertools
+# print(list(itertools.permutations([1,2,3])))
+"""without using predefined methods."""
+# lst = [1,2,3]
+# for i in range()
+
+"""Get the difference between the two lists."""
+"""using simple method"""
+# def difference(l1, l2):
+#     li = []
+#     for i in l1:
+#         if i not in l2:
+#             li.append(i)
+#     for j in l2:
+#         if j not in l1:
+#             li.append(j)
+#     return li
+# lst1 = [1,2,3,4,5]
+# lst2 = [4,5,6,7,1]
+# print(difference(lst1, lst2))
+"""using set"""
+# def difference(l1, l2):
+#     diff_l1_l2 = list(set(l1) - set(l2))
+#     diff_l2_l1 = list(set(l2) - set(l1))
+#     total_diff = diff_l1_l2 + diff_l2_l1
+#     return total_diff
+#
+# lst1 = [1,2,3,4,5]
+# lst2 = [4,5,6,7,1]
+# print(difference(lst1, lst2))
+
+"""Access the index of a list"""
+"""First Method"""
+# def access_index(li):
+#     for i in range(len(li)):
+#         print("{} : {}".format(i, li[i]))
+#
+# lst = [32, 47, -50, 53, -9]
+# access_index(lst)
+"""Second Method"""
+# def access_index(li):
+#     for index, value in enumerate(li):
+#         print("{} : {}".format(index, value))
+# lst = [32, 45, 100, 90, -1, 2]
+# access_index(lst)
