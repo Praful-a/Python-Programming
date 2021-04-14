@@ -292,3 +292,21 @@ are square of numbers between 1 and 30."""
 # lst = [12, 15, 17, 19, 100, 200]
 # lst.sort(reverse = True)
 # print(lst[1])
+
+"""Get unique values from a list"""
+"""First method"""
+# def unique(l):
+#     li = []
+#     for i in l:
+#         if i not in li:
+#             li.append(i)
+#     return li
+#
+# lst = [10, 1, 1, 2, 3, 3, 100, 100]
+# print(unique(lst))
+"""Second Method"""
+# lst = [10, 1, 1, 2, 3, 3, 100, 100]
+# print("Original List : ", lst)
+# my_set = set(lst)
+# my_new_list = list(my_set)
+# print("List of unique number : ", my_new_list)
