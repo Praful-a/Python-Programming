@@ -37,5 +37,16 @@
 #     n = len(arr)
 #     countFreq(arr, n)
 
-visited = [False for i in range(5)]
-print(visited)
+"""Count the number of elements in a list within
+a specified range."""
+def count_range_in_list(li, min, max):
+    ctr = 0
+    for n in li:
+        if min <= n <= max:
+            ctr += 1
+    return ctr
+
+lst = [10, 20, 30, 40, 40, 40, 70, 80, 99]
+print(count_range_in_list(lst, 40, 100))
+list2 = ['a','b','c','d','e','f']
+print(count_range_in_list(list2, 'a', 'e'))
